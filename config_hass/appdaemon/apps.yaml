@@ -1,0 +1,12 @@
+
+watch_light:
+  module: watch_light
+  class: WatchLight
+  entities:
+    - light.lights
+  switches:
+    - binary_sensor.lights_input
+  toggle: input_boolean.light_programming
+  event: LIGHTS_OVERRIDE
+  offset: input_number.light_elevation_offset
+  interval: 1
