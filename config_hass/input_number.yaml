@@ -1,0 +1,11 @@
+
+#########
+# Lights
+#########
+
+  light_elevation_offset:
+    name: Sun Elevation Offset
+    min: 0
+    max: 9
+    step: 1
+    icon: mdi:sun-angle

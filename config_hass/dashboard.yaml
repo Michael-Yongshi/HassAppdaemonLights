@@ -1,0 +1,106 @@
+  - theme: Backend-selected
+    title: Christmas
+    path: christmas
+    badges: []
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: entities
+            title: Entities
+            entities:
+              - entity: light.garage_front_channel_1
+              - entity: light.garage_front_channel_2
+            show_header_toggle: false
+            state_color: true
+          - type: vertical-stack
+            title: Programming
+            cards:
+              - type: entities
+                entities:
+                  - entity: input_boolean.christmas_programming
+                  - entity: input_number.light_elevation_offset
+                  - type: attribute
+                    entity: sun.sun
+                    attribute: elevation
+                    name: Sun elevation
+                    suffix: °
+                show_header_toggle: false
+                state_color: true
+              - type: entities
+                entities:
+                  - entity: input_datetime.light_start_monday
+                  - entity: input_datetime.light_end_monday
+                show_header_toggle: false
+                state_color: false
+              - type: entities
+                entities:
+                  - entity: input_datetime.light_start_tuesday
+                  - entity: input_datetime.light_end_tuesday
+                show_header_toggle: false
+                state_color: false
+              - type: entities
+                entities:
+                  - entity: input_datetime.light_start_wednesday
+                  - entity: input_datetime.light_end_wednesday
+                show_header_toggle: false
+                state_color: false
+              - type: entities
+                entities:
+                  - entity: input_datetime.light_start_thursday
+                  - entity: input_datetime.light_end_thursday
+                show_header_toggle: false
+                state_color: false
+              - type: entities
+                entities:
+                  - entity: input_datetime.light_start_friday
+                  - entity: input_datetime.light_end_friday
+                show_header_toggle: false
+                state_color: false
+              - type: entities
+                entities:
+                  - entity: input_datetime.light_start_saturday
+                  - entity: input_datetime.light_end_saturday
+                show_header_toggle: false
+                state_color: false
+              - type: entities
+                entities:
+                  - entity: input_datetime.light_start_sunday
+                  - entity: input_datetime.light_end_sunday
+                show_header_toggle: false
+                state_color: false
+      - type: horizontal-stack
+        title: Automatic Garden Lights
+        cards:
+          - type: button
+            name: GardenLightOn
+            icon: mdi:lightbulb-on
+            show_name: false
+            icon_height: 30px
+            tap_action:
+              action: call-service
+              service: script.garden_lights_override_on
+            hold_action:
+              action: call-service
+              service: script.garden_lights_override_auto
+          - type: button
+            icon: mdi:lightbulb-off-outline
+            name: GardenLightOff
+            show_name: false
+            icon_height: 30px
+            tap_action:
+              action: call-service
+              service: script.garden_lights_override_off
+            hold_action:
+              action: call-service
+              service: script.garden_lights_override_auto
+          - type: button
+            name: GardenLightAuto
+            icon: hass:cog
+            show_name: false
+            icon_height: 30px
+            tap_action:
+              action: call-service
+              service: script.garden_lights_override_auto
+            hold_action:
+              action: call-service
+              service: script.garden_lights_override_auto

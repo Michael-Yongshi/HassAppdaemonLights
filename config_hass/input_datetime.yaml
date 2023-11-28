@@ -1,0 +1,88 @@
+
+#################################################################
+## lights programming
+#################################################################
+
+  light_start_monday:
+    name: Light Start Monday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_start_tuesday:
+    name: Light Start Tuesday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_start_wednesday:
+    name: Light Start Wednesday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_start_thursday:
+    name: Light Start Thursday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_start_friday:
+    name: Light Start Friday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_start_saturday:
+    name: Light Start Saturday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_start_sunday:
+    name: Light Start Sunday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_end_monday:
+    name: Light End Monday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_end_tuesday:
+    name: Light End Tuesday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_end_wednesday:
+    name: Light End Wednesday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_end_thursday:
+    name: Light End Thursday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_end_friday:
+    name: Light End Friday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_end_saturday:
+    name: Light End Saturday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
+
+  light_end_sunday:
+    name: Light End Sunday
+    has_date: false
+    has_time: true
+    icon: mdi:clock-time-three
